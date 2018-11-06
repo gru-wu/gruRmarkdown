@@ -4,12 +4,22 @@
 \alias{fineprint_brief}
 \title{FINEPRINT Brief template}
 \usage{
-fineprint_brief(..., keep_tex = TRUE)
+fineprint_brief(..., keep_tex = TRUE, toc = FALSE,
+  number_sections = FALSE)
 }
 \arguments{
 \item{...}{Arguments to \code{rmarkdown::pdf_document}}
 
 \item{keep_tex}{Keep the intermediate tex file used in the conversion to PDF}
+
+\item{toc}{\code{TRUE} to include a table of contents in the output}
+
+\item{number_sections}{Whether to number section headers: if \code{TRUE},
+figure/table numbers will be of the form \code{X.i}, where \code{X} is the
+current first-level section number, and \code{i} is an incremental number
+(the i-th figure/table); if \code{FALSE}, figures/tables will be numbered
+sequentially in the document from 1, 2, ..., and you cannot cross-reference
+section headers in this case.}
 }
 \value{
 R Markdown output format to pass to
@@ -21,12 +31,15 @@ FINEPRINT Brief template
 \examples{
 
 \dontrun{
-library(iiasaRmarkdown)
+library(gruRmarkdown)
 
 rmarkdown::draft(file = "my_brief.Rmd", create_dir = TRUE,
-  template = "fineprint_brief", package = "gruRmarkdown")
+  template = "fineprint_brief", package = "gruRmarkdown",  edit = FALSE)
 
-rmarkdown::render(input = "my_brief.Rmd")
+# Render brief PDF and HTMl
+rmarkdown::render(input = "my_brief/my_brief.Rmd",
+  output_format = c("gruRmarkdown::fineprint_brief", "bookdown::html_document2"),
+  output_options = list(number_sections = FALSE))
 
 }
 

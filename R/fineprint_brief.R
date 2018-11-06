@@ -1,19 +1,21 @@
 #' FINEPRINT Brief template
 #'
+#' @inheritParams bookdown::pdf_document2
 #' @inheritParams rmarkdown::pdf_document
 #' @param ... Arguments to \code{rmarkdown::pdf_document}
 #'
 #' @return R Markdown output format to pass to
 #'   \code{\link[rmarkdown:render]{render}}
 #'
-#' @importFrom rmarkdown pdf_document
+#' @importFrom bookdown pdf_document2
 #'
 #' @examples
 #'
 #' \dontrun{
 #' library(gruRmarkdown)
 #'
-#' rmarkdown::draft(file = "my_brief.Rmd", create_dir = TRUE, template = "fineprint_brief", package = "gruRmarkdown",  edit = FALSE)
+#' rmarkdown::draft(file = "my_brief.Rmd", create_dir = TRUE,
+#'   template = "fineprint_brief", package = "gruRmarkdown",  edit = FALSE)
 #'
 #' # Render brief PDF and HTMl
 #' rmarkdown::render(input = "my_brief/my_brief.Rmd",

@@ -10,8 +10,9 @@ Description: Rmarkdown templates GRU.
 License: GPL (>= 3) | file LICENSE
 LazyData: TRUE
 Imports:
-    rmarkdown
+    bookdown
 Suggests:
+    rmarkdown,
     knitr,
     rticles
 RoxygenNote: 6.1.0
