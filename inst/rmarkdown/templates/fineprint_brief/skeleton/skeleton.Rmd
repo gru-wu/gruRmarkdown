@@ -1,0 +1,51 @@
+---
+title: "This is a title"
+subtitle: "This is a subtitle"
+author: "Author name"
+afiliation: "Institute of Ecological Economics, Vienna University of Economics and Business"
+abstract: "Teaser/Abstract: 14 pt In today's globalised world, our consumption of products and services causes environmental and social impacts all over the world. Many of the impacts relate to the extraction of raw materials, such as deforestation in tropical regions."
+date: "`r Sys.Date()`"
+bibliography: references.bib
+csl: "_config/nature.csl"
+link-citations: yes
+output: 
+  html_document:
+    keep_md: yes
+  gruRmarkdown::fineprint_brief: default
+---
+
+## Introduction 
+
+Use this *markdown* template to write pager or small reports for communication at <https://www.fineprint.global/>. Start the sections from level two, i.e., from `##`. The level one is reserved to the title in the html page. 
+
+## Body 
+
+### Adding references 
+
+References metadata must be in the *BibTeX* file `references.bib`. You can export the reference metadata from Citavi to *BibTeX* or directly download from the journal web pages. To include the reference in the text type `@<bibtex_key>`, e.g.,
+
+- Typing `@Bruckner:2012` results in @Bruckner:2012 
+
+- Typing `[@Bruckner:2012; @Giljum:2004]` results in [@Bruckner:2012; @Giljum:2004]
+
+For more details on how to cite click [here](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html).
+
+### External figures 
+
+Non-R figures should be added to the folder `img`. For details on how to add figures to the text click [here](https://rmarkdown.rstudio.com/authoring_basics.html).
+
+### Data input 
+
+If the input data is not too large, they can be added to the folder `input`. For more massive input datasets, please include R commands to download the data from our infrastructure <http://fineprint.wu.ac.at/ckan>. 
+
+### Data output 
+
+Intermediate datasets when required should be added to the folder `output`.
+
+## Conclusion
+
+For more details on how to write *Rmarkdown* text click [here](https://rmarkdown.rstudio.com/lesson-1.html).
+
+## References
+<!-- LEAVE THIS SECTION EMPTY -->
+
