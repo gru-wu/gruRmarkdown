@@ -3,22 +3,21 @@ title: "This is a title"
 subtitle: "This is a subtitle"
 author: "Author name"
 afiliation: "Institute of Ecological Economics, Vienna University of Economics and Business"
-abstract: "Teaser/Abstract: 14 pt In today's globalised world, our consumption of products and services causes environmental and social impacts all over the world. Many of the impacts relate to the extraction of raw materials, such as deforestation in tropical regions."
-date: "`r Sys.Date()`"
+abstract: "Teaser/Abstract: short teaser for the brief."
+date: "November 2018"
 bibliography: references.bib
-csl: "_config/nature.csl"
+csl: "_config/elsevier-vancouver.csl"
 link-citations: yes
 output: 
-  html_document:
-    keep_md: yes
-  gruRmarkdown::fineprint_brief: default
+  gruRmarkdown::html_fineprint_brief: default
+  gruRmarkdown::pdf_fineprint_brief: default
 ---
 
-## Introduction 
+### Introduction 
 
-Use this *markdown* template to write pager or small reports for communication at <https://www.fineprint.global/>. Start the sections from level two, i.e., from `##`. The level one is reserved to the title in the html page. 
+Use this *markdown* template to write pager or small reports for communication at <https://www.fineprint.global/>. In the FINEPRINT briefs use only level three headings, i.e., from `###`. The Briefs are small documents that do not require more levels. Other levels are reserved to the html headings. 
 
-## Body 
+### Body 
 
 ### Adding references 
 
@@ -42,10 +41,10 @@ If the input data is not too large, they can be added to the folder `input`. For
 
 Intermediate datasets when required should be added to the folder `output`.
 
-## Conclusion
+### Conclusion
 
 For more details on how to write *Rmarkdown* text click [here](https://rmarkdown.rstudio.com/lesson-1.html).
 
-## References
+### References
 <!-- LEAVE THIS SECTION EMPTY -->
 
