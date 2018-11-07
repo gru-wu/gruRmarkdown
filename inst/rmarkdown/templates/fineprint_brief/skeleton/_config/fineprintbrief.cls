@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{_config/fineprintbrief}[2018/10/18 - FINEPRINT Brief Class]
-\LoadClass[a4paper,13pt,twoside,twocolumn,balanc]{article}
+\LoadClass[a4paper,13pt,twoside]{article}
 
 \renewcommand{\thesection}{}
 \renewcommand{\thesection}{\hspace*{-1.0em}}
@@ -34,7 +34,7 @@
 \fancyhf{}
 \rhead{\includegraphics[width=\textwidth]{_config/head-fineprint-brief.png}}
 \fancyfoot[LE,RO]{--\thepage--} % Page number to the Left in Odd and to the Right in Even
-\fancyfoot[RE,LO]{\href{www.fineprint.global}{https://www.fineprint.global}} % Page number to the Left in Odd and to the Right in Even
+\fancyfoot[RE,LO]{\href{www.fineprint.global}{www.fineprint.global}} % Page number to the Left in Odd and to the Right in Even
 \fancyfootoffset[L]{12pt}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0.5pt}
@@ -47,7 +47,7 @@
     filecolor=wublue,
     urlcolor=wublue,
     citecolor=wublue,
-    urlcolor=black,
+    urlcolor=wublue,
     anchorcolor=black
 }
 
@@ -79,10 +79,10 @@
 
 \renewcommand{\maketitle}{\makebrieftitle}
 \newcommand\makebrieftitle{%
-\twocolumn[{
+
 	\begin{minipage}[t]{\textwidth}%
         \begin{flushleft}
-			\vspace{-0.5in}
+			\vspace{-0.7in}
 			\@leftlogo
 			\vspace{0.5in}
 		    \par
@@ -98,7 +98,9 @@
            {\small%
              \lineskip .5em%
              {\large\bf Authors: }{\ifthenelse{\isundefined{\@author}}{}{\large\@author}}%
-             \\{\ifthenelse{\isundefined{\@afiliation}}{}{\@afiliation}}%
+             \\{\ifthenelse{\isundefined{\@afiliation}}{}{\@afiliation\par}}%
+             \vskip1em%
+             \ifthenelse{\isundefined{\@date}}{}{\@date}%
            \par}%
 
 	\end{minipage}
@@ -112,5 +114,5 @@
     \par%
     \vskip2em%
 
-}]}
+}
 
