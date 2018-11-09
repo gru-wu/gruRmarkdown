@@ -1,0 +1,62 @@
+---
+thesis: "Bachelor Thesis" # OR "Master Thesis"
+title: "The title of my work"
+subtitle: "A optional subtitle"
+author: "My Name"
+studentid: "0000000"
+supervisor: "Name of supervisor"
+institute: "Institute for Ecological Economics"
+submission: "November 7, 2018"
+keywords: "keyword 1, keyword 2, keyword 3."
+abstract: "Write your abstract here... text text text text text text text text text text text text text text text text text text text text text."
+bibliography: references.bib
+csl: "_config/elsevier-harvard.csl"
+link-citations: yes
+output: 
+  gruRmarkdown::pdf_gru_thesis: default
+---
+
+# Guidelines for the supervision of bachelor theses
+
+This section presents the guidelines for the supervision of bachelor theses by members of the research group "Global Resource Use"/Institute for Ecological Economics.
+
+- The topic of the bachelor thesis must be closely related to the core areas of research in the group "Global Resource Use". These include the following broad areas: 
+    - Extraction of raw materials, including biomass, fossil fuels, metals and minerals -- and related environmental and social impacts, e.g. water scarcity, land use change and deforestation, environmental conflicts, ...
+    - Structure of international trade and global production chains
+    - Consumption of products and options to move towards "sustainable consumption"
+- A list of currently open topics is available at the webpage of the group: <https://www.wu.ac.at/en/ecolecon/research/global-resource-use/theses>
+- The applicant should have explicit interest in working in quantitative analyses and analyses based on environmental-economic data. Exceptions are possible and depend on the topic, i.e. if a literature review is able to provide a comprehensive range of insights for the topic under investigation.
+- The minimum length of the bachelor thesis is 30-40 pages, depending on the research focus. A bachelor thesis including comprehensive empirical, data-based analyses will rather target 30 pages of written text. A thesis that focuses on e.g. a literature review, will require 40 pages of written text. 
+- A mix of reference types must be used as a basis for the thesis, i.e. including scientific literature (journal articles), reports as well as internet resources. Citations should be included in the text (Harvard Style), not in footnotes. Page numbers must only be included in the in-text citations, if certain passages are included 1:1 in the thesis text. If sources with three or more authors are cited, the citation should be using the main author plus et al. (e.g. Name et al., 2018).
+- Bachelor theses should normally be finalized in a time frame of 3-6 months. Alternative arrangements can be negotiated.
+- In general, the supervision process is organized in the following steps: 
+    - Personal meeting between the candidate and the supervisor at the very beginning of the thesis process. Discussion and decision on the topic. Explanation of guidelines and clarification on any open procedural issues. 
+    - After 1-3 weeks: elaboration of a research outline, i.e. 1-2 pages including background, objectives and research questions, applied methods and data sources, expected outcomes; plus a 1-page table of contents, i.e. expected chapters of the theses including indicative page numbers.
+    - After feedback of the supervisor on the outline: elaboration of a draft of the bachelor thesis, which is sent to the supervisor.
+    - Feedback of the supervisor on the draft thesis, either in a personal meeting or via e-mail. 
+    - Inclusion of feedback of supervisor and preparation of the final version of the thesis. 
+        
+    Additional feedback via e-mail as well as personal meetings if needed will be set up on an ad-hoc basis.
+    
+    - Bachelor theses can be written both in English and in German, depending on the preference of the candidate. 
+
+# Using Rmarkdown 
+
+For basic Rmarkdown see <https://rmarkdown.rstudio.com/authoring_basics.html> and <https://rmarkdown.rstudio.com/lesson-1.html>.
+
+## Adding references 
+
+References metadata must be in the *BibTeX* file `references.bib`. You can export the reference metadata from Citavi to *BibTeX* or directly download from the journal web pages. To include the reference in the text type `@<bibtex_key>`, e.g.,
+
+- Typing `@Bruckner:2012` results in @Bruckner:2012 
+
+- Typing `[@Bruckner:2012; @Giljum:2004]` results in [@Bruckner:2012; @Giljum:2004]
+
+For more details on how to cite click [here](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html).
+
+## External figures 
+
+Non-R figures should be added to the folder `figures` and tables to `tables`.
+
+# References {-}
+<!-- LEAVE THIS SECTION EMPTY -->

@@ -2,7 +2,7 @@ Package: gruRmarkdown
 Type: Package
 Title: Rmarkdown templates for GRU
 Version: 0.1.9000
-Date: 2018-11-06
+Date: 2018-11-09
 Authors@R: c(person('Victor', 'Maus', role = c('aut', 'cre'), email = 'victor.maus@wu.ac.at'))
 Author: Victor Maus [aut, cre]
 Maintainer: Victor Maus <maus@iiasa.ac.at>
