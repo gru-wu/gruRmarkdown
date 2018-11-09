@@ -1,14 +1,14 @@
 # gruRmarkdown
 
 Provides Rmarkdown templates to GRU work. To install use
-```
+```{r}
 devtools::install_github("gru-wu/gruRmarkdown")
 ```
 
 # Usage 
 
 ## Create FINEPRINT brief
-```
+```{r}
 library(gruRmarkdown)
 
 # Create draft
@@ -21,7 +21,7 @@ rmarkdown::render(input = "my_brief/my_brief.Rmd",
 ```
 
 ## Create GRU thesis
-```
+```{r}
 library(gruRmarkdown)
 
 # Create draft
