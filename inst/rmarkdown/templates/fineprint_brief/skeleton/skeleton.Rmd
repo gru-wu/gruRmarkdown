@@ -1,9 +1,9 @@
 ---
-title: "This is a title"
-subtitle: "This is a subtitle"
+title: "This is the title"
+subtitle: "This is the subtitle"
 author: "Author name"
-afiliation: "Institute of Ecological Economics, Vienna University of Economics and Business"
-abstract: "Teaser/Abstract: short teaser for the brief."
+affiliation: "Institute of Ecological Economics, Vienna University of Economics and Business"
+abstract: "Teaser/Abstract - a short teaser for the brief."
 date: "November 2018"
 bibliography: references.bib
 csl: "_config/elsevier-vancouver.csl"
@@ -15,19 +15,19 @@ output:
 
 ### Introduction 
 
-Use this *markdown* template to write pager or small reports for communication at <https://www.fineprint.global/>. In the FINEPRINT briefs use only level three headings, i.e., from `###`. The Briefs are small documents that do not require more levels. Other levels are reserved to the html headings. 
+Use this *markdown* template to write pager or small reports for communication at <https://www.fineprint.global/>. In the FINEPRINT briefs use only level three headings, i.e., from `###`. The briefs are small documents that do not require more levels. Other levels are reserved to HTML headings. 
 
 ### Body 
 
 ### Adding references 
 
-References metadata must be in the *BibTeX* file `references.bib`. You can export the reference metadata from Citavi to *BibTeX* or directly download from the journal web pages. To include the reference in the text type `@<bibtex_key>`, e.g.,
+Reference metadata must be in the *BibTeX* file `references.bib`. You can export this metadata from Citavi to *BibTeX* or directly download it from journal's web pages or Google Scholar. To include the reference in the text type `@<bibtex_key>`, e.g.:
 
 - Typing `@Bruckner:2012` results in @Bruckner:2012 
 
 - Typing `[@Bruckner:2012; @Giljum:2004]` results in [@Bruckner:2012; @Giljum:2004]
 
-For more details on how to cite click [here](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html).
+For more details on how to cite in R Markdown click [here](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html).
 
 ### External figures 
 
@@ -39,12 +39,11 @@ If the input data is not too large, they can be added to the folder `input`. For
 
 ### Data output 
 
-Intermediate datasets when required should be added to the folder `output`.
+Intermediate datasets, if required, should be added to the folder `output`.
 
 ### Conclusion
 
-For more details on how to write *Rmarkdown* text click [here](https://rmarkdown.rstudio.com/lesson-1.html).
+For more details on how to write *R Markdown* text click [here](https://rmarkdown.rstudio.com/lesson-1.html).
 
 ### References
 <!-- LEAVE THIS SECTION EMPTY -->
-
