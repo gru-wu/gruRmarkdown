@@ -45,6 +45,9 @@ Intermediate datasets when required should be added to the folder `output`.
 
 For more details on how to write *Rmarkdown* text click [here](https://rmarkdown.rstudio.com/lesson-1.html).
 
+### Citation
+Last Name (Year). Title: subtitle. FINEPRINT Brief n. X. Vienna University of Economics and Business.
+
 ### References
 <!-- LEAVE THIS SECTION EMPTY -->
 

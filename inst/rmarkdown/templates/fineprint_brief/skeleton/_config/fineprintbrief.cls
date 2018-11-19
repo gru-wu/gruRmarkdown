@@ -76,6 +76,7 @@
 \newcommand*{\keywords}[1]{\def\@keywords{#1}}
 \newcommand*{\afiliation}[1]{\def\@afiliation{#1}}
 \newcommand{\Abstract}[1]{\def\@Abstract{#1}}
+%\newcommand{\citation}[1]{\def\@citation{#1}}
 
 \renewcommand{\maketitle}{\makebrieftitle}
 \newcommand\makebrieftitle{%
