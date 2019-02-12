@@ -2,7 +2,7 @@
 title: "This is a title"
 subtitle: "This is a subtitle"
 author: "Author name"
-afiliation: "Institute of Ecological Economics, Vienna University of Economics and Business"
+afiliation: "Institute for Ecological Economics, Vienna University of Economics and Business"
 abstract: "Teaser/Abstract: short teaser for the brief."
 date: "November 2018"
 bibliography: references.bib
