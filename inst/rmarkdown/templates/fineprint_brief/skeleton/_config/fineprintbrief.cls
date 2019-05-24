@@ -1,6 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{_config/fineprintbrief}[2018/10/18 - FINEPRINT Brief Class]
 \LoadClass[a4paper,13pt,twoside]{article}
+\usepackage[utf8]{inputenc}
 
 \renewcommand{\thesection}{}
 \renewcommand{\thesection}{\hspace*{-1.0em}}
@@ -43,13 +44,15 @@
 \definecolor{wugrey}{rgb}{0.0000000, 0.1328125, 0.2773438}
 \hypersetup{
     colorlinks=true,
-    linkcolor=black,
+    linkcolor=wublue,
     filecolor=wublue,
     urlcolor=wublue,
     citecolor=wublue,
     urlcolor=wublue,
     anchorcolor=black
 }
+
+\renewcommand\UrlFont{\color{wublue}\sffamily}
 
 % Add FINEPRINT logo
 \def\@leftlogo{\relax}
@@ -76,6 +79,7 @@
 \newcommand*{\keywords}[1]{\def\@keywords{#1}}
 \newcommand*{\afiliation}[1]{\def\@afiliation{#1}}
 \newcommand{\Abstract}[1]{\def\@Abstract{#1}}
+%\newcommand{\citation}[1]{\def\@citation{#1}}
 
 \renewcommand{\maketitle}{\makebrieftitle}
 \newcommand\makebrieftitle{%
@@ -98,7 +102,7 @@
            {\small%
              \lineskip .5em%
              {\large\bf Authors: }{\ifthenelse{\isundefined{\@author}}{}{\large\@author}}%
-             \\{\ifthenelse{\isundefined{\@afiliation}}{}{\@afiliation\par}}%
+             \\\vskip 0.5em{\ifthenelse{\isundefined{\@afiliation}}{}{\@afiliation\par}}%
              \vskip1em%
              \ifthenelse{\isundefined{\@date}}{}{\@date}%
            \par}%

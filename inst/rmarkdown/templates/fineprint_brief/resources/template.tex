@@ -2,6 +2,9 @@
 \documentclass[..]{_config/fineprintbrief}
 \usepackage[numbers]{natbib}
 \renewcommand{\numberline}[1]{}
+$for(header-includes)$
+$header-includes$
+$endfor$
 
 \title{$if(title)$$title$$endif$}
 
@@ -15,11 +18,15 @@
 
 \date{$if(date)$$date$$endif$}
 
+%\briefcitation{$if(citation)$$citation$$endif$}
+
 \begin{document}
 
 \maketitle
 
 $body$
+
+%\subsubsection{Citation}$if(citation)$$citation$$endif$
 
 \end{document}
 
