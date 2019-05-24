@@ -1,13 +1,20 @@
 # gruRmarkdown
 
-Provides Rmarkdown templates to GRU work. To install use
+Provides R Markdown templates for GRU work. Currently includes the following templates:
+
+- Theses
+- FINEPRINT Briefs
+
+
+
+# Usage 
+
+To install use:
 ```r
 devtools::install_github("gru-wu/gruRmarkdown")
 ```
 
-# Usage 
-
-## Create FINEPRINT brief
+## Create a FINEPRINT brief
 ```r
 library(gruRmarkdown)
 
@@ -20,7 +27,7 @@ rmarkdown::render(input = "my_brief/my_brief.Rmd",
    output_format = c("gruRmarkdown::pdf_fineprint_brief", "gruRmarkdown::html_fineprint_brief"))
 ```
 
-## Create GRU thesis
+## Create a GRU thesis
 ```r
 library(gruRmarkdown)
 
