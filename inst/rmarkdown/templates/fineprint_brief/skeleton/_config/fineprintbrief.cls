@@ -101,7 +101,7 @@
           \vskip 2em%
            {\small%
              \lineskip .5em%
-             {\large\bf Authors: }{\ifthenelse{\isundefined{\@author}}{}{\large\@author}}%
+             {\ifthenelse{\isundefined{\@author}}{}{\large\@author}}%
              \\\vskip 0.5em{\ifthenelse{\isundefined{\@afiliation}}{}{\@afiliation\par}}%
              \vskip1em%
              \ifthenelse{\isundefined{\@date}}{}{\@date}%
