@@ -21,7 +21,7 @@
 \RequirePackage{flushend}
 
 % Font open sans
-\RequirePackage[default,osfigures]{opensans}
+\RequirePackage[default,oldstyle]{opensans}
 \renewcommand{\baselinestretch}{1.2} % Line spacing
 \setlength{\parindent}{0pt}          % Paragraphs indentation
 \setlength{\parskip}{\baselineskip}  % Between paragraphs spacing
